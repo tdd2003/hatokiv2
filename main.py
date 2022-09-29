@@ -1,4 +1,4 @@
-from colorama import Fore, Back, Style
+from color import Fore, Back, Style
 import socket
 import os
 import requests
