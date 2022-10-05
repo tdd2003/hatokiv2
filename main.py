@@ -1,4 +1,4 @@
-from color import Fore, Back, Style
+from colorma import Fore, Back, Style
 import socket
 import os
 import requests
@@ -54,7 +54,7 @@ def menu():
                      ║-------------- prohibit attack government web, gov ---------------║ 
                      ╚═════════════╦══════════════════════════════════════╦═════════════╝
                          ╔═════════╩═════════╗                  ╔═════════╩═════════╗
-                         ║   tddcd.info      ╠══════════════════╣   tddcd.info      ║
+                         ║    tddcd.info     ╠══════════════════╣   tddcd.info      ║
                          ║    0974998164     ║ -   -   -   -  - ║   0974998164      ║
                          ║                   ╠══════════════════╣                   ║
                          ╚═══════════════════╝                  ╚═══════════════════╝
